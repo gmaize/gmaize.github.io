@@ -145,7 +145,7 @@ h3 ~ p {
 -------------------------------------------*/
 
 .education {
-    background: linear-gradient(rgba(141, 153, 174, 0.1), rgba(255, 255, 255, 0.8)), url(../images/surfing.jpg) no-repeat fixed;
+    background: linear-gradient(rgba(141, 153, 174, 0.1), rgba(255, 255, 255, 0.8)), url(../images/surfing.JPG) no-repeat fixed;
     background-position: 35%;
 /*    background-size: cover;*/
 }
