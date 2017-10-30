@@ -68,7 +68,7 @@ a:hover {
 
 /* Header and Footer
 -------------------------------------------*/
-footer {
+header, footer {
     background: #00171f;
     color: #00a8e8;
 }
