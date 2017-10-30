@@ -1,0 +1,180 @@
+/* Color Palette
+#FFFFFF - white
+#00171f - rich black
+#003495 - prussian blue
+#007ea7 - cerulean
+#00a8e8 - vivid something (lightish blue)
+*/
+
+/* Global
+-------------------------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+a {
+    color: #00a8e8;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 60px 50px;
+    overflow: auto;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.btn {
+    text-decoration: none;
+    background: red;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Header and Footer
+-------------------------------------------*/
+header, footer {
+    background: #00171f;
+    color: #00a8e8;
+}
+
+/* header */
+header h1, header h2 {
+    color: #FFFFFF;
+    margin: 0;
+}
+
+header {
+    padding-top: 50px;
+    position: relative;
+}
+
+/* footer */
+footer {
+    text-align: center;
+}
+
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+}
+
+.profile-img {
+    border-radius: 50%;
+}
+
+.download {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* Navigation
+-------------------------------------------*/
+nav {
+    text-align: center;
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/* Work Experience
+-------------------------------------------*/
+.work {
+/*    background: #FFFFFF;*/
+    background: linear-gradient(rgba(141, 153, 174, 0.1), rgba(255, 255, 255, 0.8)), url(../images/surfing.jpg) no-repeat fixed;
+    background-position: 35%;
+/*    background-size: cover;*/
+}
+
+h3 ~ p {
+    margin: 0;
+}
+
+.job-description p:first-of-type {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* Education
+-------------------------------------------*/
+
+.education {
+    background: linear-gradient(rgba(141, 153, 174, 0.1), rgba(255, 255, 255, 0.8)), url(../images/surfing.jpg) no-repeat fixed;
+    background-position: 35%;
+/*    background-size: cover;*/
+}
+
+p + h3 {
+    margin-top: 30px;
+}
+
+/* Media Queries
+-------------------------------------------*/
+
+@media (min-width: 900px) {
+    .col-narrow {
+        width: 30%;
+        float: left;
+    }
+
+    .col-wide {
+        width: 70%;
+        float: left;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 899px) {
+    header {
+        text-align: center;
+    }
+    .profile-img {
+        width: 200px;
+    }
+}
