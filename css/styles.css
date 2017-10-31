@@ -84,6 +84,16 @@ header {
     position: relative;
 }
 
+.profile-img {
+    border-radius: 50%;
+}
+
+.download {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 /* footer */
 footer {
     text-align: center;
@@ -94,14 +104,8 @@ footer {
     display: inline-block;
 }
 
-.profile-img {
-    border-radius: 50%;
-}
-
-.download {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+.fa {
+    font-size: 30px;
 }
 
 /* Navigation
