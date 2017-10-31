@@ -11,74 +11,80 @@
     <body>
         <!-- // Intro  -->
         <header id="about">
-            <a href="MaizeResume.pdf" class="btn download" target="_blank" >View Resume PDF</a>
             <nav>
-               <a href="#about">About</a>
-               <a href="#work">Work Experience</a>
-               <a href="#education">Education</a>
-               <a href="#contact">Contact</a>
+               <a class="nav-link" href="#about">About</a>
+               <a class="nav-link" href="#work">Work Experience</a>
+               <a class="nav-link" href="#education">Education</a>
+               <a class="nav-link" href="#contact">Contact</a>
+               <a  class="btn download" href="MaizeResume.pdf" target="_blank" >Resume PDF</a>
             </nav>
-            <div class="content-wrap">
-                <img class="profile-img" src="images/Joshua-Tree-Silhouette.png" alt="Gianni Maize">
-                <div class="about-me">
-                    <h1>Gianni Maize</h1>
-                    <h2>Software Engineer</h2>
-                    <p>Greetings! My name is Gianni Maize. I'm a SoCal native, Stanford graduate, adrenaline fueled surfer, Colombian inspired Salsero, aspiring actor, tech enthusiast, and more. My hobbies also include playing rugby, sketching in my notebook, riding my bike, and playing Settlers of Catan. 
-                    <br><br>I'm currently available for hire as a full-stack, front-end, or back-end Software Engineer. Please feel free to contact me via the links at the bottom of this page. Cheers! 🤙</p>
+            <div class="section-content-wrap">
+                <div class="about-item">
+                    <div class="profile-img">
+                        <img class="profile-img" src="images/Joshua-Tree-Silhouette.png" alt="Gianni Maize">
+                    </div>
+                    <div class="about-me">
+                        <h1>Gianni Maize</h1>
+                        <h2>Software Engineer</h2>
+                        <p>Greetings! My name is Gianni Maize. I'm a SoCal native, Stanford graduate, adrenaline fueled surfer, Colombian inspired Salsero, aspiring actor, tech enthusiast, and more. My hobbies also include playing rugby, sketching in my notebook, riding my bike, and playing Settlers of Catan. 
+                        <br><br>I'm currently available for hire as a full-stack, front-end, or back-end Software Engineer. Please feel free to contact me via the links at the bottom of this page. Cheers! 🤙</p>
+                    </div>
                 </div>
             </div>
         </header>
         <main>
             <!--  // Work Experience  -->
             <section id="work" class="work">
-                <div class="content-wrap">
-                    <h2>Work Experience</h2>
+                <div class="section-content-wrap">
+                    <h2 class="section-title">Work Experience</h2>
                     <!--  // Job Details   -->
-                    <img class="job-icon" src="images/netapp.jpg" alt="NetApp">
-                    <div class="job-title">
-                        <h3>Software Engineer</h3>
-                        <p class="uppercase">NetApp</p>
-                        <p>November 2014 - March 2016</p>
-                    </div>
-                    <div class="job-overview">
-                        <!--  // Job Summary  -->
-                        <div class="job-summary">
-                        <p>As a Software Engineer at NetApp, I took responsiblity for architecting, developing, and maintaining full-stack performance analysis web-tools. These were typically in the form of graphical single-page applications, but also varied as per the team's needs.</p>
+                    <div class="job">
+                        <div class="job-icon">
+                            <img class="job-icon" src="images/netapp.jpg" alt="NetApp">
                         </div>
-                        <div class="job-details">
-                            <ul>
-                                <li>Designed, developed, and supported performance analysis and reporting tools and infrastructure</li>
-                                <li>Ensured tools’ maximal benefit across various performance groups</li>
-                                <li>Worked with performance labs’ infrastructure and automation to enable tool workflow</li>
-                                <li>Designed and implemented ONTAP performance exceptions surveillance system:
-                                    <ul>
-                                        <li>Leveraged company-wide performance data-stores</li>
-                                        <li>Allowed developers to easily define variety of performance exception conditions</li>
-                                        <li>Enabled QA to detect a wider class of comprehensive performance issues</li>
-                                    </ul>
-                                </li>
-                            </ul>
+                        <div class="job-about">
+                            <h3>Software Engineer</h3>
+                            <p><em>Nov. 2014 - Mar. 2016</em></p>
+                            <!--  // Job Summary  -->
+                            <div class="job-summary">
+                            <p>After being promoted to Software Engineer, I took responsiblity for architecting, developing, and maintaining full-stack performance analysis web-tools. These were typically in the form of graphical single-page applications, but also varied as per the team's needs.</p>
+                            </div>
+                            <div class="job-details">
+                                <ul>
+                                    <li>Designed, developed, and supported performance analysis and reporting tools and infrastructure</li>
+                                    <li>Ensured tools’ maximal benefit across various performance groups</li>
+                                    <li>Worked with performance labs’ infrastructure and automation to enable tool workflow</li>
+                                    <li>Designed and implemented ONTAP performance exceptions surveillance system:
+                                        <ul>
+                                            <li>Leveraged company-wide performance data-stores</li>
+                                            <li>Allowed developers to easily define variety of performance exception conditions</li>
+                                            <li>Enabled QA to detect a wider class of comprehensive performance issues</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <img class="job-icon" src="images/netapp.jpg" alt="NetApp">
-                    <div class="job-title">
-                        <h3>Web Applications Developer</h3>
-                        <p class="uppercase">NetApp</p>
-                        <p>April 2014 - November 2014</p>
-                    </div>
-                    <div class="job-overview">
-                        <!--  // Job Summary  -->
-                        <div class="job-summary">
-                            <p>As a Web Applications Developer at NetApp, I primarily took responsiblity for developing and maintaining a single-page web-based graphical application used internally for performance analysis and reporting.</p>
+                    <div class="job">
+                        <div class="job-icon">
+                            <img class="job-icon" src="images/netapp.jpg" alt="NetApp">
                         </div>
-                        <div class="job-details">
-                            <ul>
-                                <li>Owned full-stack of intracompany data visualization and analysis web-tool</li>
-                                <li>Drove tools’ continuous innovation, modularity, performance, and architectural design</li>
-                                <li>Added new tool features for cross-team functionality, responded to bug reports, and answered questions regarding usage and design</li>
-                                <li>Trained co-developer on tool architecture and best practices</li>
-                                <li>Redesigned codebase to achieve 80% loading speed improvements, decreases in long-term storage requirements of 150MB per performance test (avg. 10+ tests per day), and reduction in run-time memory overhead by 400x</li>
-                            </ul>
+                        <div class="job-about">
+                            <h3>Web Applications Developer</h3>
+                            <p><em>Apr. 2014 - Nov. 2014</em></p>
+                            <!--  // Job Summary  -->
+                            <div class="job-summary">
+                                <p>As a Web Applications Developer at NetApp, I primarily took responsiblity for developing and maintaining a single-page web-based graphical application used internally for performance analysis and reporting.</p>
+                            </div>
+                            <div class="job-details">
+                                <ul>
+                                    <li>Owned full-stack of intracompany data visualization and analysis web-tool</li>
+                                    <li>Drove tools’ continuous innovation, modularity, performance, and architectural design</li>
+                                    <li>Added new tool features for cross-team functionality, responded to bug reports, and answered questions regarding usage and design</li>
+                                    <li>Trained co-developer on tool architecture and best practices</li>
+                                    <li>Redesigned codebase to achieve 80% loading speed improvements, decreases in long-term storage requirements of 150MB per performance test (avg. 10+ tests per day), and reduction in run-time memory overhead by 400x</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -86,21 +92,27 @@
 
             <!--  // Education  -->
             <section id="education" class="education">
-                <img class="education-icon" src="images/stanford.jpg" alt="Stanford">
-                <div class="content-wrap education-overview">
-                    <h2>Education</h2>
-                    <!--  // School Details   -->
-                    <h3>Stanford University</h3>
-                    <p>Bachelor of Arts, 2014<br>Economics, w/Minor in Computer Science</p>
+                <div class="section-content-wrap">
+                    <h2 class="section-title">Education</h2>
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <img class="education-icon" src="images/stanford.png" alt="Stanford">
+                        </div>
+                        <div class="education-overview">
+                            <!--  // School Details   -->
+                            <h3>Stanford University</h3>
+                            <p>Bachelor of Arts in Economics,<br>with a Minor in Computer Science</p>
 
-<!--                    <p>Summary and other details (rugby, social chair, band, projects)</p>-->
+        <!--                    <p>Summary and other details (rugby, social chair, band, projects)</p>-->
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
 
         <!--  // Footer & contact info  -->
         <footer id="contact">
-            <div class="content-wrap">
+            <div class="section-content-wrap">
                 <h2>Let's keep in touch</h2>
 
                 <!--  // Contact Links  -->

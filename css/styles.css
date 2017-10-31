@@ -9,6 +9,13 @@
 /* Global
 -------------------------------------------*/
 /* apply a natural box layout model to all elements, but allowing components to change */
+
+/*
+div {
+    border: solid red 1px;
+}
+*/
+
 html {
     box-sizing: border-box;
 }
@@ -39,6 +46,12 @@ h3 {
     margin: 0;
 }
 
+/*
+.section-title {
+    text-align: center;
+}
+*/
+
 a {
     color: #00a8e8;
 }
@@ -47,11 +60,14 @@ a:hover {
     text-decoration: none;
 }
 
-.content-wrap {
-    max-width: 950px;
+ul {
+    overflow: hidden; 
+}
+
+.section-content-wrap {
+    max-width: 80%;
     margin: 0 auto;
     padding: 60px 50px;
-    overflow: auto;
 }
 
 .uppercase {
@@ -59,11 +75,11 @@ a:hover {
 }
 
 .btn {
+    border-radius: 5%;
     text-decoration: none;
     background: red;
     color: white;
-    padding: 10px;
-    display: inline-block;
+    padding: 5px;
 }
 
 /* Header and Footer
@@ -84,14 +100,8 @@ header {
     position: relative;
 }
 
-.profile-img {
+img.profile-img {
     border-radius: 50%;
-}
-
-.download {
-    position: absolute;
-    bottom: 0;
-    right: 0;
 }
 
 /* footer */
@@ -120,12 +130,11 @@ nav {
 
 nav a {
     display: inline-block;
-    padding: 15px 20px;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 15px 20px;
     font-weight: 700;
 }
-
 
 /* Work Experience
 -------------------------------------------*/
@@ -142,6 +151,10 @@ h3 ~ p {
     margin-bottom: 25px;
 }
 
+.job-dates {
+    padding-left: 20px;
+}
+
 /* Education
 -------------------------------------------*/
 
@@ -156,25 +169,35 @@ p + h3 {
 
 /* Media Queries
 -------------------------------------------*/
-
-@media (min-width: 900px) {
-    .col-narrow {
-        width: 30%;
-        float: left;
-    }
-
-    .col-wide {
-        width: 70%;
-        float: left;
-        padding-left: 20px;
-    }
+div.about-item::after, div.job::after, div.education-item::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-@media (max-width: 899px) {
-    header {
-        text-align: center;
-    }
-    .profile-img {
-        width: 200px;
-    }
+div.profile-img, div.job-icon, div.education-icon {
+    float: left;
+}
+
+img.profile-img {
+    margin-top: 30px;
+    width: 300px;
+    margin-right: 50px;
+}
+
+img.job-icon, img.education-icon {
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+img.job-icon {
+    width: 70px;
+}
+
+img.education-icon {
+    width: 60px;
+}
+
+div.about-me, div.job-about {
+    overflow: hidden;
 }
