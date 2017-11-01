@@ -224,6 +224,10 @@ div.about-me, div.job-about {
     overflow: hidden;
 }
 
+div.about-me p {
+    margin-top: 20px;
+}
+
 header h1 {
     text-align: center;
 }
@@ -232,6 +236,10 @@ header h1 {
 
 header .section-content-wrap {
     max-width: 90%;
+}
+
+div.job:not(:first-of-type) {
+    margin-top: 50px;
 }
 
 
