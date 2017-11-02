@@ -76,12 +76,12 @@ ul {
     padding: 5px;
 }
 
-.side-lines {
+header h1 {
      text-align: center;
 }
 
-.side-lines:before,
-.side-lines:after {
+header h1:before,
+header h1:after {
      background-color: #FFFFFF;
      content: "";
      display: inline-block;
@@ -90,12 +90,12 @@ ul {
      vertical-align: middle;
      width: 30%;
 }
-.side-lines:before {
+header h1:before {
      right: 0.5em;
      margin-left: -50%;
 }
 
-.side-lines:after {
+header h1:after {
      left: 0.5em;
      margin-right: -50%;
 }
@@ -118,11 +118,11 @@ header {
     position: relative;
 }
 
-img.profile-img {
+header img {
     border-radius: 50%;
 }
 
-h1 span.side-lines {
+header h1 {
     max-width: 100%;
 }
 
@@ -131,7 +131,7 @@ footer {
     text-align: center;
 }
 
-.contact-info a {
+footer a {
     padding: 10px;
     display: inline-block;
 }
@@ -148,6 +148,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 nav a {
@@ -160,7 +161,7 @@ nav a {
 
 /* Work Experience
 -------------------------------------------*/
-.work {
+#work {
     background: #FFFFFF;
 }
 
@@ -180,7 +181,7 @@ h3 ~ p {
 /* Education
 -------------------------------------------*/
 
-.education {
+#education {
     background: linear-gradient(rgba(141, 153, 174, 0.1), rgba(255, 255, 255, 0.8)), url(../images/surfing.JPG) no-repeat fixed;
     background-position: 35%;
 }
@@ -191,17 +192,17 @@ p + h3 {
 
 /* Media Queries
 -------------------------------------------*/
-div.about-item::after, div.job::after, div.education-item::after {
+header .section-content-wrap::after, div.job::after, #education .section-content-wrap::after {
     content: "";
     clear: both;
     display: table;
 }
 
-div.profile-img, div.job-icon, div.education-icon {
+header img, .job .job-icon, .education-icon {
     float: left;
 }
 
-img.profile-img {
+header img {
 /*    margin-top: 30px;*/
     width: 300px;
     margin-right: 30px;
@@ -220,19 +221,13 @@ img.education-icon {
     width: 60px;
 }
 
-div.about-me, div.job-about {
+div.job-about {
     overflow: hidden;
-}
-
-div.about-me p {
-    margin-top: 20px;
 }
 
 header h1 {
     text-align: center;
 }
-
-
 
 header .section-content-wrap {
     max-width: 90%;
@@ -240,6 +235,10 @@ header .section-content-wrap {
 
 div.job:not(:first-of-type) {
     margin-top: 50px;
+}
+
+.job div {
+    overflow: hidden;
 }
 
 
