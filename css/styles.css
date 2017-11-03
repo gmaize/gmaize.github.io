@@ -10,9 +10,11 @@
 -------------------------------------------*/
 /* apply a natural box layout model to all elements, but allowing components to change */
 
+/*
 * {
     border: solid red 1px;
 }
+*/
 
 html {
     box-sizing: border-box;
