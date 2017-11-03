@@ -81,26 +81,6 @@ header h1 {
     max-width: 100%;
 }
 
-header h1:before,
-header h1:after {
-     background-color: #FFFFFF;
-     content: "";
-     display: inline-block;
-     height: 3px;
-     position: relative;
-     vertical-align: middle;
-     width: 30%;
-}
-header h1:before {
-     right: 0.5em;
-     margin-left: -50%;
-}
-
-header h1:after {
-     left: 0.5em;
-     margin-right: -50%;
-}
-
 /* Header and Footer
 -------------------------------------------*/
 header, footer {
@@ -273,6 +253,28 @@ header p {
     
 }
 
+@media only screen and (min-width: 901px) {
+    header h1:before,
+    header h1:after {
+        background-color: #FFFFFF;
+        content: "";
+        display: inline-block;
+        height: 3px;
+        position: relative;
+        vertical-align: middle;
+        width: 30%;
+    }
+    header h1:before {
+        right: 0.5em;
+        margin-left: -50%;
+    }
+
+    header h1:after {
+        left: 0.5em;
+        margin-right: -50%;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     .section-content-wrap {
         max-width: 95%;
@@ -282,6 +284,8 @@ header p {
     ul { padding-left: 1.2em; }
 
 }
+
+
 
 @media only screen and (max-width: 800px) {
     header img {
