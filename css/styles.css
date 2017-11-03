@@ -10,11 +10,9 @@
 -------------------------------------------*/
 /* apply a natural box layout model to all elements, but allowing components to change */
 
-/*
 * {
     border: solid red 1px;
 }
-*/
 
 html {
     box-sizing: border-box;
@@ -304,6 +302,20 @@ header p {
     }
 }
 
+@media only screen and (max-width: 700px) {
+    header nav {
+        display: table;
+    }
+    
+    header nav a:not(.btn) {
+        display: table-cell;
+    }
+    
+    header nav a {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 
 /* Header and Footer
 -------------------------------------------*/
