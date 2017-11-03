@@ -166,6 +166,10 @@ h3 ~ p {
     margin: 0;
 }
 
+.job p:nth-of-type(2) {
+    text-indent: 25px;
+}
+
 
 /* Education
 -------------------------------------------*/
@@ -269,6 +273,16 @@ header p {
     
 }
 
+@media only screen and (max-width: 900px) {
+    .section-content-wrap {
+        max-width: 95%;
+        padding: 50px 40px;
+    }
+
+    ul { padding-left: 1.2em; }
+
+}
+
 @media only screen and (max-width: 800px) {
     header img {
         width: 200px;
@@ -278,9 +292,13 @@ header p {
     header .section-content-wrap, .section-content-wrap {
         max-width: 100%;
     }
-    
 }
 
+@media only screen and (max-width: 750px) {
+    .section-content-wrap {
+        padding: 40px 30px;
+    }
+}
 
 
 /* Header and Footer
