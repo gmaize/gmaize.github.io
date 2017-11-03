@@ -115,7 +115,7 @@ footer a {
 
 /* Navigation
 -------------------------------------------*/
-header .fa-bars {
+header .nav-bar-icon {
     display: none;
 }
 
@@ -328,13 +328,16 @@ header p {
         display: none;
     }
     
-    header .fa-bars {
+    header .nav-bar-icon {
+        width: 40px;
         display: block;
         margin-left: 2vw;
         margin-top: 2vw;
-        padding-top: -1px;
         position: fixed;
         top: 0;
+        background: #00171f;
+        border-radius: 3px;
+        padding: 8px;
     }
 }
 
