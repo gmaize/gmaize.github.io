@@ -403,6 +403,20 @@ and (min-width: 551px) {
     header .x-icon {
         width: 38px;
     }
+    
+    .modal {
+        background-color: rgba(0,0,0,0.4);
+        width: 100vh;
+        height: 100vh;
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        top: 0;
+    }
+    
+    .no-scroll {
+        overflow-y: hidden;
+    }
 }
 
 /* Header and Footer
