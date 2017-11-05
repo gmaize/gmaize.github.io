@@ -1,22 +1,32 @@
-var navMenuElem = document.querySelector("header nav");
-var menuBarsElem = document.querySelector("header .bars-icon");
-var menuXElem = document.querySelector("header .x-icon");
-menuBarsElem.onclick = function () {
-    navMenuElem.classList.add("visible");
-    menuBarsElem.classList.add("hidden");
-    menuXElem.classList.add("visible");
-    
-    navMenuElem.classList.remove("hidden");
-    menuBarsElem.classList.remove("visible");
-    menuXElem.classList.remove("hidden");
-};
+var navMenu = document.querySelector("header nav");
+var navMenuLinks = document.querySelectorAll("header nav a")
+var menuBars = document.querySelector("header .bars-icon");
+var menuX = document.querySelector("header .x-icon");
 
-menuXElem.onclick = function () {
-    navMenuElem.classList.add("hidden");
-    menuXElem.classList.add("hidden");
-    menuBarsElem.classList.add("visible");
-    
-    navMenuElem.classList.remove("visible");
-    menuXElem.classList.remove("visible");
-    menuBarsElem.classList.remove("hidden");
+
+//navMenuLinks.onclick = closeNavMenu;
+for (var i = 0; i < navMenuLinks.length; i++) {
+    navMenuLinks[i].onclick = closeNavMenu;
 };
+menuBars.onclick = openNavMenu;
+menuX.onclick = closeNavMenu;
+
+function openNavMenu() {
+    navMenu.classList.add("visible");
+    menuBars.classList.add("hidden");
+    menuX.classList.add("visible");
+    
+    navMenu.classList.remove("hidden");
+    menuBars.classList.remove("visible");
+    menuX.classList.remove("hidden");
+}
+
+function closeNavMenu() {
+    navMenu.classList.add("hidden");
+    menuX.classList.add("hidden");
+    menuBars.classList.add("visible");
+    
+    navMenu.classList.remove("visible");
+    menuX.classList.remove("visible");
+    menuBars.classList.remove("hidden");
+}
