@@ -353,13 +353,21 @@ and (min-width: 551px) {
     }
     
     header nav {
-        padding-bottom: 20px;
-        display: none;
-        padding-top: 40px;
+        overflow-y: hidden;
+        transition: 0.2s;
+        height: 0;
         --side-margin: 45px;
     }
     
+    header nav.visible {
+        height: 310px;
+        overflow-y: scroll;
+        padding-bottom: 20px;
+        padding-top: 40px;
+    }
+    
     header nav a {
+        border-bottom: 1px solid #eee;
         float: left;
         clear: left;
         width: calc(100% - 2*var(--side-margin));
@@ -392,11 +400,11 @@ and (min-width: 551px) {
         width: 40px;
     }
     
-    header .hidden {
+    header img.hidden {
         display: none;
     }
     
-    header .visible {
+    header img.visible {
         display: block;
     }
     

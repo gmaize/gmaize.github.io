@@ -15,25 +15,25 @@ menuX.onclick = closeNavMenu;
 modalWrap.onclick = closeNavMenu;
 
 function openNavMenu() {
+    navMenu.classList.remove("hidden");
+    menuBars.classList.remove("visible");
+    menuX.classList.remove("hidden");
+    
     html.classList.add("no-scroll");
     modalWrap.classList.add("modal");
     navMenu.classList.add("visible");
     menuBars.classList.add("hidden");
     menuX.classList.add("visible");
-    
-    navMenu.classList.remove("hidden");
-    menuBars.classList.remove("visible");
-    menuX.classList.remove("hidden");
 }
 
 function closeNavMenu() {
-    navMenu.classList.add("hidden");
-    menuX.classList.add("hidden");
-    menuBars.classList.add("visible");
-    
     html.classList.remove("no-scroll");
     modalWrap.classList.remove("modal");
     navMenu.classList.remove("visible");
     menuX.classList.remove("visible");
     menuBars.classList.remove("hidden");
+    
+    navMenu.classList.add("hidden");
+    menuX.classList.add("hidden");
+    menuBars.classList.add("visible");
 }
