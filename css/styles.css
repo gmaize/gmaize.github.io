@@ -309,7 +309,7 @@ header p {
 }
     
 @media only screen and (max-width: 700px)
-and (min-width: 551px) {
+and (min-width: 551px) and (min-height: 501px) {
     header nav {
         display: table;
     }
@@ -330,12 +330,6 @@ and (min-width: 551px) {
     header nav a:last-of-type {
         padding-right: 10px;
     }
-    
-/*
-    header .bars-icon[style] {
-        
-    }
-*/
 }
 @media only screen and (min-width: 551px) {
     header .bars-icon, header .x-icon {
@@ -343,7 +337,7 @@ and (min-width: 551px) {
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 550px), only screen and (max-height: 500px) {
     header {
         padding-top: 0;
     }
