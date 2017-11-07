@@ -148,10 +148,6 @@ h3 ~ p {
     margin: 0;
 }
 
-.job p:nth-of-type(2) {
-    text-indent: 25px;
-}
-
 
 /* Education
 -------------------------------------------*/
@@ -215,9 +211,6 @@ header p:first-of-type {
     padding-top: 30px;
 }
 
-header p {
-    text-indent: 25px;
-}
 
 
 /* Global
@@ -278,12 +271,10 @@ header p {
 }
 
 @media only screen and (max-width: 900px) {
-    .section-content-wrap {
-        max-width: 95%;
-        padding: 50px 40px;
-    }
 
-    ul { padding-left: 1.2em; }
+    ul { 
+        padding-left: 1.2em; 
+    }
 
 }
 
@@ -293,12 +284,6 @@ header p {
     
     header .section-content-wrap, .section-content-wrap {
         max-width: 100%;
-    }
-}
-
-@media only screen and (max-width: 750px) {
-    .section-content-wrap {
-        padding: 40px 30px;
     }
 }
 
@@ -340,11 +325,6 @@ and (min-width: 551px) and (min-height: 501px) {
 @media only screen and (max-width: 550px), only screen and (max-height: 500px) {
     header {
         padding-top: 0;
-    }
-    
-    .section-content-wrap {
-        padding-right: 15px;
-        padding-left: 15px;
     }
     
     header h1 {
